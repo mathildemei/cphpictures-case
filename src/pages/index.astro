@@ -7,13 +7,22 @@ import Link from "../components/Link.astro";
 <MainLayout title="Københavnerbilleder">
   <section id="home" class="py-6">
     <!-- Hero unit -->
-    <article class="grid grid-rows-1 grid-cols-2 gap-2 mt-16">
-      <img src="/imgs/herounit.jpg" alt="Københavnerbilleder bog" />
+    <article class="grid grid-rows-1 grid-cols-2 gap-2 mt-16 pr-12">
+      <img
+        class="pl-12"
+        src="/imgs/herounit.jpg"
+        alt="Københavnerbilleder bog"
+      />
       <div>
-        <h1 class="text-3xl font-bold uppercase mb-6 text-center text-black">
+        <h1 class="text-3xl font-bold uppercase mb-6 text-left text-black pl-4">
           Københavnerbilleder - en guide til hipster foto af Sten Simons
         </h1>
-        <div class="mt-6">
+        <p class="pl-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae
+          non minus, eum, odio quidem ea velit dolorum nulla placeat nihil
+          corrupti saepe rerum molestiae aut perspiciatis consequuntur id modi.
+        </p>
+        <div class="mt-6 grid place-content-strech pl-4 pr-72">
           <Button>Køb nu</Button>
         </div>
       </div>
@@ -40,7 +49,7 @@ import Link from "../components/Link.astro";
       </div>
     </article>
     <article
-      class="grid grid-rows-1 grid-cols-3 gap-2 place-content-center mt-24"
+      class="grid grid-rows-1 grid-cols-3 gap-2 place-content-center mt-24 pl-12 pr-12"
     >
       <img src="/imgs/oppefra.jpg" alt="" />
       <img src="/imgs/herounit.jpg" alt="" />
@@ -48,10 +57,10 @@ import Link from "../components/Link.astro";
     </article>
   </section>
   <section id="indhold" class="mt-24">
-    <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
-      Kaptilerne
+    <h2 class="text-3xl font-bold uppercase mb-6 text-left text-black pl-12">
+      Bogens kaptiler
     </h2>
-    <article class="grid grid-rows-4 grid-cols-2 gap-2">
+    <article class="grid grid-rows-4 grid-cols-2 gap-2 pl-12 pr-12 gap-2">
       <div>
         <h3 class="font-bold">Kapitel 1 - Intro til street foto</h3>
         <p>
@@ -128,10 +137,12 @@ import Link from "../components/Link.astro";
     </article>
 
     <article class="mt-24">
-      <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
+      <h2 class="text-3xl font-bold uppercase mb-6 text-left text-black pl-12">
         Pressen siger
       </h2>
-      <div class="grid grid-rows-1 grid-cols-3 gap-2 place-content-center">
+      <div
+        class="grid grid-rows-1 grid-cols-3 gap-6 place-content-center pl-12 pr-12"
+      >
         <div>
           <div class="grid grid-rows-1 grid-cols-6">
             <svg
@@ -219,13 +230,13 @@ import Link from "../components/Link.astro";
               ></path>
             </svg>
           </div>
-          <p>
+          <p class="pt-2">
             Københavnerbilleder er en grundig introduktion til at skyde billeder
             med retro-kant. Hvad enten du er har arbejdet med foto siden
             135-filmen kom på markedet, du kun har skudt digitalt eller er helt
             nybegynder, er der masser af tips og tricks i bogen.
           </p>
-          <p class="italic">- Hanne Hovgaard, Berlingeren</p>
+          <p class="italic pt-2">- Hanne Hovgaard, Berlingeren</p>
         </div>
         <div>
           <div class="grid grid-rows-1 grid-cols-6">
@@ -300,11 +311,11 @@ import Link from "../components/Link.astro";
               ></path>
             </svg>
           </div>
-          <p>
+          <p class="pt-2">
             Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
             skal man sige om en fotobog?
           </p>
-          <p class="italic">- Kim Kloggaard, Fotojournalen.dk</p>
+          <p class="italic pt-2">- Kim Kloggaard, Fotojournalen.dk</p>
         </div>
         <div>
           <div class="grid grid-rows-1 grid-cols-6">
@@ -393,23 +404,25 @@ import Link from "../components/Link.astro";
               ></path>
             </svg>
           </div>
-          <p>
+          <p class="pt-2">
             Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
             fotobog er klart den bedste - her er han for alvor i sit rette
             element, meget bedre end “studiefotografering som begyndere.”
             Tillykke - godt arbejde.
           </p>
-          <p class="italic">- Volmer Hansen, Lukkertiden.dk</p>
+          <p class="italic pt-2">- Volmer Hansen, Lukkertiden.dk</p>
         </div>
       </div>
     </article>
     <article>
       <h2
-        class="text-3xl font-bold uppercase mb-6 text-center text-black mt-24"
+        class="text-3xl font-bold uppercase mb-6 text-left text-black mt-24 pl-12"
       >
         Galleri
       </h2>
-      <div class="grid grid-rows-3 grid-cols-4 gap-2 place-content-center">
+      <div
+        class="grid grid-rows-3 grid-cols-4 gap-2 place-content-center pl-12 pr-12"
+      >
         <img src="/imgs/oppefra.jpg" alt="" />
         <img src="/imgs/herounit.jpg" alt="" />
         <img src="/imgs/venstre.jpg" alt="" />
@@ -426,23 +439,29 @@ import Link from "../components/Link.astro";
     </article>
   </section>
   <section id="forfatter">
-    <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black mt-24">
+    <h2
+      class="text-3xl font-bold uppercase mb-6 text-left text-black mt-24 pl-12"
+    >
       Forfatteren
     </h2>
-    <article class="grid grid-rows-1 grid-cols-2 gap-2 place-content: center;">
+    <article
+      class="grid grid-rows-1 grid-cols-2 gap-2 place-content: center; pl-12 pr-12"
+    >
       <div>
         <img src="/imgs/sten_simons.jpg" alt="Billede af forfatteren" />
       </div>
-      <div>
-        Sten Simons har en lang foto-karriere bag sig. Det hele startede i
-        00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens
-        forfald. Det ledte til en række udstillinger, og blev senere til hans
-        først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter
-        tog karrieren fart: Han blev fotojournalist og dokumenterede en masse
-        dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende
-        begyndte han at undervise i foto, og har skrevet et utal af bøger,
-        herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse,
-        og lærebogen Fotografering for evnesvage.
+      <div class="pl-4 pr-12">
+        <p>
+          Sten Simons har en lang foto-karriere bag sig. Det hele startede i
+          00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens
+          forfald. Det ledte til en række udstillinger, og blev senere til hans
+          først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+          Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede
+          en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.”
+          Sideløbende begyndte han at undervise i foto, og har skrevet et utal
+          af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en
+          visuel odysse, og lærebogen Fotografering for evnesvage.
+        </p>
       </div>
     </article>
   </section>
@@ -450,7 +469,9 @@ import Link from "../components/Link.astro";
     <!-- Form -->
     <article class="flex justify-center items-center min-h-screen">
       <form class="w-full max-w-lg p-8 shadow-none">
-        <h2 class="text-3xl font-bold uppercase mt-24 text-center text-black">
+        <h2
+          class="text-3xl font-bold uppercase mt-24 text-left text-black pb-4"
+        >
           Køb bogen her
         </h2>
 
