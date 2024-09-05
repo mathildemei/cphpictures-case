@@ -7,7 +7,7 @@ import Link from "../components/Link.astro";
 <MainLayout title="Københavnerbilleder">
   <section id="home" class="py-6">
     <!-- Hero unit -->
-    <article class="grid grid-rows-1 grid-cols-2 gap-2">
+    <article class="grid grid-rows-1 grid-cols-2 gap-2 mt-16">
       <img src="/imgs/herounit.jpg" alt="Københavnerbilleder bog" />
       <div>
         <h1 class="text-3xl font-bold uppercase mb-6 text-center text-black">
@@ -18,7 +18,7 @@ import Link from "../components/Link.astro";
         </div>
       </div>
     </article>
-    <article class="grid grid-rows-1 grid-cols-2 gap-2 place-content-center">
+    <article class="mt-24 grid lg:grid-cols-2 prose mx-auto gap-4">
       <div>
         <ul>
           <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
@@ -39,13 +39,15 @@ import Link from "../components/Link.astro";
         </p>
       </div>
     </article>
-    <article class="grid grid-rows-1 grid-cols-3 gap-2 place-content-center">
+    <article
+      class="grid grid-rows-1 grid-cols-3 gap-2 place-content-center mt-24"
+    >
       <img src="/imgs/oppefra.jpg" alt="" />
       <img src="/imgs/herounit.jpg" alt="" />
       <img src="/imgs/venstre.jpg" alt="" />
     </article>
   </section>
-  <section id="indhold" class="py-10">
+  <section id="indhold" class="mt-24">
     <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
       Kaptilerne
     </h2>
@@ -125,7 +127,7 @@ import Link from "../components/Link.astro";
       </div>
     </article>
 
-    <article class="py-10">
+    <article class="mt-24">
       <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
         Pressen siger
       </h2>
@@ -223,7 +225,7 @@ import Link from "../components/Link.astro";
             135-filmen kom på markedet, du kun har skudt digitalt eller er helt
             nybegynder, er der masser af tips og tricks i bogen.
           </p>
-          <p>- Hanne Hovgaard, Berlingeren</p>
+          <p class="italic">- Hanne Hovgaard, Berlingeren</p>
         </div>
         <div>
           <div class="grid grid-rows-1 grid-cols-6">
@@ -302,7 +304,7 @@ import Link from "../components/Link.astro";
             Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
             skal man sige om en fotobog?
           </p>
-          <p>- Kim Kloggaard, Fotojournalen.dk</p>
+          <p class="italic">- Kim Kloggaard, Fotojournalen.dk</p>
         </div>
         <div>
           <div class="grid grid-rows-1 grid-cols-6">
@@ -397,12 +399,14 @@ import Link from "../components/Link.astro";
             element, meget bedre end “studiefotografering som begyndere.”
             Tillykke - godt arbejde.
           </p>
-          <p>- Volmer Hansen, Lukkertiden.dk</p>
+          <p class="italic">- Volmer Hansen, Lukkertiden.dk</p>
         </div>
       </div>
     </article>
     <article>
-      <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
+      <h2
+        class="text-3xl font-bold uppercase mb-6 text-center text-black mt-24"
+      >
         Galleri
       </h2>
       <div class="grid grid-rows-3 grid-cols-4 gap-2 place-content-center">
@@ -422,7 +426,7 @@ import Link from "../components/Link.astro";
     </article>
   </section>
   <section id="forfatter">
-    <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
+    <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black mt-24">
       Forfatteren
     </h2>
     <article class="grid grid-rows-1 grid-cols-2 gap-2 place-content: center;">
@@ -446,7 +450,7 @@ import Link from "../components/Link.astro";
     <!-- Form -->
     <article class="flex justify-center items-center min-h-screen">
       <form class="w-full max-w-lg p-8 shadow-none">
-        <h2 class="text-3xl font-bold uppercase mb-6 text-center text-black">
+        <h2 class="text-3xl font-bold uppercase mt-24 text-center text-black">
           Køb bogen her
         </h2>
 
